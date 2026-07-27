@@ -1,8 +1,30 @@
 aid: inloop-robotics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inloop-robotics.png
 name: Inloop Robotics
-description: Inloop Robotics is a company surfaced as a portfolio company of y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Inloop Robotics (InLoop) is a Y Combinator (Spring 2026) startup in San Francisco
+  offering robotics-as-a-service for warehouses, fulfillment centers, and light
+  manufacturing. Its bimanual "Loop V1" robot performs box assembly, kitting,
+  visual inspection, content preparation, unpackaging, and order pick-and-pack.
+  The system runs a hybrid-autonomy, human-in-the-loop model: onboard AI handles
+  routine work while remote teleoperators take over on edge cases, and production
+  failures feed continuous learning. InLoop sells this as a flat monthly subscription
+  that bundles the hardware, ongoing AI updates, and 24/7 teleassistance fallback,
+  rather than selling robots outright. As of this profile the company publishes a
+  marketing site only, with no public developer portal, API, SDK, or documentation
+  surface; this record tracks it as an API Evangelist network lead pending any future
+  developer/API program.
 url: https://raw.githubusercontent.com/api-evangelist/inloop-robotics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +32,34 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-yc-batch: Spring 2026
+x-location: San Francisco, CA
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Robotics as a Service
+- Warehouse Automation
+- Fulfillment
+- Logistics
+- Manufacturing
+- Teleoperation
+- Artificial Intelligence
 apis: []
+common:
+- type: Website
+  url: https://inloop-robotics.com/
+- type: DomainSecurity
+  url: security/inloop-robotics-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
